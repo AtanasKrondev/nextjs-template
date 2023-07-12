@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-size: 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.navigation {
+  background-color: #000;
+  color: #ffffff;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+footer {
+  background-color: #000;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
+
+.navigation-logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #fd0202;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.navigation-link {
+  transition: all 0.3s ease;
+}
+
+.navigation-link:hover {
+  color: #fd0202;
+}
+
+.cover {
+  background-image: url('/intro-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  padding: 20px;
+  text-align: right;
+}
+
+.title {
+  color: #fd0202;
+  font-size: 90px;
+}
+
+.section-title {
+  font-size: 50px;
+  color: #fd0202;
+}
+
+.card-name {
+  font-size: 28px;
+  color: #fd0202;
+}
+
+.columns {
+  display: flex;
+}
+
+.column-half {
+  flex: 50%;
+  padding: 16px;
+}
+
+.gallery-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.container {
+  padding: 16px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  border: 1px solid #fd0202;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.card p {
+  text-align: justify;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+  }
+
+  .columns {
+    flex-direction: column;
+  }
+
+  .column-half {
+    flex: 100%;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
